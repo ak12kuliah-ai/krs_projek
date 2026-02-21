@@ -1,0 +1,17 @@
+Options -Indexes
+
+# Protect sensitive files
+<FilesMatch "^(\.env|\.env\.example|composer\.json|package\.json|schema\.sql|seed\.sql)$">
+  Require all denied
+</FilesMatch>
+
+# Block direct access to /includes and /data and /database
+RewriteEngine On
+RewriteRule ^includes/ - [F,L]
+RewriteRule ^data/ - [F,L]
+RewriteRule ^database/ - [F,L]
+
+# OPTIONAL: kalau mau pakai "pretty url" (boleh dimatikan kalau tidak perlu)
+# RewriteCond %{REQUEST_FILENAME} !-f
+# RewriteCond %{REQUEST_FILENAME} !-d
+# RewriteRule ^ index.php [L]

@@ -1,0 +1,19 @@
+{
+  "admin": [
+    { "label": "Dashboard", "path": "admin/dashboard/index.php" },
+    { "label": "Semester Aktif", "path": "admin/semester/index.php" },
+    { "label": "Penjadwalan", "path": "admin/penjadwalan/index.php" },
+    { "label": "Users", "path": "admin/users/index.php" },
+    { "label": "Verifikasi Pembayaran", "path": "admin/verifikasi/index.php" }
+  ],
+  "mahasiswa": [
+    { "label": "Dashboard", "path": "mahasiswa/index.php" },
+    { "label": "Upload Pembayaran", "path": "mahasiswa/pembayaran/upload.php" },
+    { "label": "Ajukan KRS", "path": "mahasiswa/krs/index.php" },
+    { "label": "Jadwal", "path": "mahasiswa/jadwal/index.php" }
+  ],
+  "dosen": [
+    { "label": "Dashboard", "path": "dosen/index.php" },
+    { "label": "Validasi KRS", "path": "dosen/validasi/index.php" }
+  ]
+}
